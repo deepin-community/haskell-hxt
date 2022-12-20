@@ -1,0 +1,262 @@
+haskell-hxt (9.3.1.18-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:39:21 +0800
+
+haskell-hxt (9.3.1.18-2) unstable; urgency=medium
+
+  * Sourceful upload for GHC 8.8.
+
+ -- Clint Adams <clint@debian.org>  Thu, 04 Jun 2020 12:21:52 -0400
+
+haskell-hxt (9.3.1.18-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Mon, 29 Jul 2019 16:36:01 -0400
+
+haskell-hxt (9.3.1.16-6) unstable; urgency=medium
+
+  * Remove build dependency on libghc-parsec3-dev (provided by ghc-
+    8.4.3)
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Wed, 03 Oct 2018 12:06:13 +0300
+
+haskell-hxt (9.3.1.16-5) unstable; urgency=medium
+
+  * Remove build dependency on libghc-mtl-dev (provided by ghc-8.4.3)
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Mon, 01 Oct 2018 13:33:28 +0300
+
+haskell-hxt (9.3.1.16-4) unstable; urgency=medium
+
+  [ Clint Adams ]
+  * Set Rules-Requires-Root to no.
+
+  [ Ilias Tsitsimpis ]
+  * Bump debhelper compat level to 10
+
+ -- Ilias Tsitsimpis <iliastsi@debian.org>  Sun, 30 Sep 2018 21:12:17 +0300
+
+haskell-hxt (9.3.1.16-3) unstable; urgency=medium
+
+  [ Ilias Tsitsimpis ]
+  * Change Priority to optional. Since Debian Policy version 4.0.1,
+    priority extra has been deprecated.
+  * Use the HTTPS form of the copyright-format URL
+  * Modify d/watch and Source field in d/copyright to use HTTPS
+  * Declare compliance with Debian policy 4.1.1
+  * Use salsa.debian.org URLs in Vcs-{Browser,Git} fields
+
+  [ Clint Adams ]
+  * Bump to Standards-Version 4.1.4.
+
+ -- Clint Adams <clint@debian.org>  Mon, 09 Apr 2018 20:04:53 -0400
+
+haskell-hxt (9.3.1.16-2) unstable; urgency=medium
+
+  * Upload to unstable as part of GHC 8 transition.
+
+ -- Clint Adams <clint@debian.org>  Thu, 27 Oct 2016 18:34:25 -0400
+
+haskell-hxt (9.3.1.16-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Clint Adams <clint@debian.org>  Wed, 26 Oct 2016 19:01:06 -0400
+
+haskell-hxt (9.3.1.15-5) experimental; urgency=medium
+
+  [ Joachim Breitner ]
+  * Fix description redundancies (Closes: #813794)
+
+  [ Dmitry Bogatov ]
+  * Use secure (https) uri in Vcs-Git field in 'debian/control'
+  * Bump standards version to 3.9.8 (no changes needed)
+
+  [ Clint Adams ]
+  * Temporarily build-depend on ghc 8.
+
+ -- Clint Adams <clint@debian.org>  Sun, 16 Oct 2016 01:26:09 -0400
+
+haskell-hxt (9.3.1.15-4) unstable; urgency=medium
+
+  * Switch Vcs-Git/Vcs-Browser headers to new location.
+
+ -- Clint Adams <clint@debian.org>  Thu, 03 Dec 2015 14:54:38 -0500
+
+haskell-hxt (9.3.1.15-3) experimental; urgency=medium
+
+  * Bump standards-version to 3.9.6
+  * Depend on haskell-devscripts >= 0.10 to ensure that this package
+    builds against GHC in experimental
+
+ -- Joachim Breitner <nomeata@debian.org>  Thu, 20 Aug 2015 10:27:57 +0200
+
+haskell-hxt (9.3.1.15-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon, 27 Apr 2015 11:50:53 +0200
+
+haskell-hxt (9.3.1.15-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon, 06 Apr 2015 12:59:26 +0200
+
+haskell-hxt (9.3.1.4-2) experimental; urgency=medium
+
+  * Depend on haskell-devscripts 0.9, found in experimental
+
+ -- Joachim Breitner <nomeata@debian.org>  Sat, 20 Dec 2014 17:11:03 +0100
+
+haskell-hxt (9.3.1.4-1) unstable; urgency=low
+
+  * Adjust watch file to new hackage layout
+  * New upstream release
+
+ -- Joachim Breitner <nomeata@debian.org>  Mon, 04 Aug 2014 23:17:02 +0200
+
+haskell-hxt (9.3.1.1-2) unstable; urgency=low
+
+  * Enable compat level 9
+  * Use substvars for Haskell description blurbs
+
+ -- Joachim Breitner <nomeata@debian.org>  Fri, 24 May 2013 12:51:06 +0200
+
+haskell-hxt (9.3.1.1-1) experimental; urgency=low
+
+  * Depend on haskell-devscripts 0.8.13 to ensure this packages is built
+    against experimental
+  * New upstream release
+  * Fix build dependencies, they were completely bogus
+
+ -- Joachim Breitner <nomeata@debian.org>  Fri, 19 Oct 2012 22:58:54 +0200
+
+haskell-hxt (9.2.2-3) experimental; urgency=low
+
+  * Bump standards version, no change
+
+ -- Joachim Breitner <nomeata@debian.org>  Sun, 14 Oct 2012 12:01:15 +0200
+
+haskell-hxt (9.2.2-2) unstable; urgency=low
+
+  * debian/copyright: Rewrite in new copyright format.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 05 Mar 2012 20:25:17 +0900
+
+haskell-hxt (9.2.2-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/patches/haskell98: Removed.
+  * Update Standards-Version to 3.9.3.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 05 Mar 2012 11:24:03 +0900
+
+haskell-hxt (9.1.5-3) unstable; urgency=low
+
+  * Temporarily remove libghc-binary-* from build dependencies.
+    ghc 7.4 at least temporarily provides these, and this avoids FTBFS
+    on the autobuilders due to #659081.
+
+ -- Joey Hess <joeyh@debian.org>  Tue, 28 Feb 2012 21:21:56 -0400
+
+haskell-hxt (9.1.5-2) unstable; urgency=low
+
+  * Sourceful upload to rebuild documentation package
+  * Remove haskell98 build dependency from cabal file.
+
+ -- Joey Hess <joeyh@debian.org>  Mon, 27 Feb 2012 12:38:31 -0400
+
+haskell-hxt (9.1.5-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Tue, 15 Nov 2011 11:13:21 +0900
+
+haskell-hxt (9.1.4-2) unstable; urgency=low
+
+  [ Joachim Breitner ]
+  * Fix typo in description (Closes: #642226)
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Tue, 27 Sep 2011 10:25:58 +0900
+
+haskell-hxt (9.1.4-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Tue, 20 Sep 2011 10:55:03 +0900
+
+haskell-hxt (9.1.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Standards-Version: 3.9.2
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 20 Jun 2011 11:31:17 +0900
+
+haskell-hxt (9.1.1-1) unstable; urgency=low
+
+  [ Marco Silva ]
+  * Use ghc instead of ghc6
+
+  [ TANIGUCHI Takaki ]
+  * Nes upstream.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Thu, 14 Apr 2011 10:53:40 +0900
+
+haskell-hxt (9.0.1-1) unstable; urgency=low
+
+  * New upstream.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Thu, 09 Dec 2010 08:47:25 +0900
+
+haskell-hxt (9.0.0-1) unstable; urgency=low
+
+  * New Upstream version 9.0.0
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Thu, 28 Oct 2010 15:00:28 +0900
+
+haskell-hxt (8.5.4-1) unstable; urgency=low
+
+  * New Upstream.
+  * deleate 'debian/libghc6-hxt-doc.examples'.
+  * debian/control:
+    * change Priority to extra
+    * Updated to Standards-Version 3.9.1 (no changes needed)
+  * debian/patcheds: removed. It is not required any more.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Wed, 25 Aug 2010 13:58:42 +0900
+
+haskell-hxt (8.5.2-1.1) unstable; urgency=low
+
+  * Patch tagsoup-0.10-compat.patch (Closes: #587541)
+    Patch taken from
+    http://www.freebsd.org/cgi/cvsweb.cgi/ports/textproc/hs-hxt/files/
+  * Add VCS-Fields
+  * Add example to libghc6-hxt-doc
+  * Switch to 3.0 (quilt) source format
+  * Run ghc6 without active timer (+RTS -V0 -RTS). Should work around
+    http://hackage.haskell.org/trac/ghc/ticket/4074 on slow arches.
+  * Bump standards version, no change
+
+ -- Joachim Breitner <nomeata@debian.org>  Sat, 10 Jul 2010 20:00:07 +0200
+
+haskell-hxt (8.5.2-1) unstable; urgency=low
+
+  * New Upstream version 8.5.2
+  * debian/control:
+    * Build-Depends: change to libcurl4-gnutls-dev from libcurl4-openssl-dev.
+      (Closes: #574534, #574807)
+    * Build-Depends: Add cabal-install.
+  * debian/control: Maitainer is changed to Debia Haskell Group.
+  * debian/control: add my name to Uploaders:.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Sun, 21 Mar 2010 20:40:39 +0900
+
+haskell-hxt (8.5.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #511325)
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Mon, 15 Mar 2010 22:00:04 +0900

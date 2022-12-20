@@ -1,0 +1,98 @@
+Source: haskell-hxt
+Maintainer: Debian Haskell Group <pkg-haskell-maintainers@lists.alioth.debian.org>
+Uploaders:
+ TANIGUCHI Takaki <takaki@debian.org>,
+Priority: optional
+Section: haskell
+Rules-Requires-Root: no
+Build-Depends: haskell-devscripts (>= 0.13),
+ cdbs,
+ debhelper (>= 10),
+ ghc (>= 8.4.3),
+ ghc-prof,
+ libghc-hxt-charproperties-dev (>= 9.1),
+ libghc-hxt-charproperties-prof,
+ libghc-hxt-regex-xmlschema-dev (>= 9.2),
+ libghc-hxt-regex-xmlschema-prof,
+ libghc-hxt-unicode-dev (>= 9.0.1),
+ libghc-hxt-unicode-prof,
+ libghc-network-uri-dev (>= 2.6),
+ libghc-network-uri-prof,
+Build-Depends-Indep: ghc-doc,
+ libghc-hxt-charproperties-doc,
+ libghc-hxt-regex-xmlschema-doc,
+ libghc-hxt-unicode-doc,
+ libghc-network-uri-doc,
+Standards-Version: 4.5.0
+Homepage: https://github.com/UweSchmidt/hxt
+Vcs-Browser: https://salsa.debian.org/haskell-team/DHG_packages/tree/master/p/haskell-hxt
+Vcs-Git: https://salsa.debian.org/haskell-team/DHG_packages.git [p/haskell-hxt]
+X-Description: collection of tools for processing XML with Haskell
+ The Haskell XML Toolbox bases on the ideas of HaXml and HXML, but introduces a
+ more general approach for processing XML with Haskell.  The Haskell XML
+ Toolbox uses a generic data model for representing XML documents, including
+ the DTD subset and the document subset, in Haskell.  It contains a validating
+ XML parser, a HTML parser, namespace support, an XPath expression evaluator,
+ an XSLT library, a RelaxNG schema validator and funtions for serialization and
+ deserialization of user defined data.  The library makes extensive use of the
+ arrow approach for processing XML.
+ .
+ Since version 9 the toolbox is partitioned into various (sub-)packages.  This
+ package contains the core functionality, hxt-curl, hxt-tagsoup, hxt-relaxng,
+ hxt-xpath, hxt-xslt, hxt-regex-xmlschema contain the extensions.  hxt-unicode
+ contains encoding and decoding functions, hxt-charproperties char properties
+ for unicode and XML.
+
+Package: libghc-hxt-dev
+Architecture: any
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Conflicts:
+ ${haskell:Conflicts},
+Provides:
+ ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-hxt-prof
+Architecture: any
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Conflicts:
+ ${haskell:Conflicts},
+Provides:
+ ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
+
+Package: libghc-hxt-doc
+Architecture: all
+Section: doc
+Depends:
+ ${haskell:Depends},
+ ${misc:Depends},
+Recommends:
+ ${haskell:Recommends},
+Suggests:
+ ${haskell:Suggests},
+Conflicts:
+ ${haskell:Conflicts},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+ ${haskell:LongDescription}
+ .
+ ${haskell:Blurb}
